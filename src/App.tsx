@@ -4,6 +4,7 @@ import Storytex from "./components/projects/Storytex";
 import Frontend from "./components/projects/Frontend";
 import Backend from "./components/projects/Backend";
 import OneByOne from "./components/projects/OneByOne";
+import SnakeGame from "./components/projects/SnakeGame";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Frontend />
       <Backend />
       <OneByOne />
+      <SnakeGame />
     </div>
   );
 }

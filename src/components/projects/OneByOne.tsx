@@ -226,7 +226,7 @@ const OneByOne = () => {
       </div>
 
       {/* Smooth transition to next section */}
-      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-neutral-950 to-transparent z-20" />
+      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-neutral-950 to-transparent z-20 pointer-events-none" />
     </div>
   );
 };

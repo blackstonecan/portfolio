@@ -4,7 +4,7 @@ import {
     Camera,
     ExternalLink
 } from 'lucide-react';
-import storytexLogo from '../../assets/storytex_logo.webp';
+import storytexLogo from '../../assets/storytex/storytex_logo.webp';
 
 const Storytex = () => {
     const features = [

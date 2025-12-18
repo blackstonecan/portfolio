@@ -1,10 +1,10 @@
 const navItems = [
   { label: "Me", href: "#me" },
-  { label: "Backend", href: "#backend" },
+  { label: "Projects", href: "#projects" },
   { label: "Frontend", href: "#frontend" },
+  { label: "Backend", href: "#backend" },
   { label: "Mobile", href: "#mobile" },
   { label: "Machine Learning", href: "#ml" },
-  { label: "Desktop", href: "#desktop" },
 ];
 
 export default function Header() {
