@@ -133,7 +133,7 @@ const Backend = () => {
       </div>
 
       {/* TypeScript E-Commerce Backend */}
-      <div className="relative z-20 max-w-5xl mx-auto px-6">
+      <div className="relative z-20 max-w-5xl mx-auto px-6 pb-20 sm:pb-28">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-3 mb-4">
             <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
@@ -234,6 +234,9 @@ const Backend = () => {
           </a>
         </div>
       </div>
+
+      {/* Smooth gradient fade to next section */}
+      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-neutral-950 to-transparent z-20" />
     </div>
   );
 };

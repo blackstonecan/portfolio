@@ -3,6 +3,7 @@ import Entry from "./components/general/Entry";
 import Storytex from "./components/projects/Storytex";
 import Frontend from "./components/projects/Frontend";
 import Backend from "./components/projects/Backend";
+import OneByOne from "./components/projects/OneByOne";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Storytex />
       <Frontend />
       <Backend />
+      <OneByOne />
     </div>
   );
 }
