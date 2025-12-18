@@ -2,7 +2,9 @@ import { ExternalLink } from 'lucide-react';
 
 const Frontend = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div
+      id="frontend"
+      className="relative min-h-screen overflow-hidden">
       {/* Smooth gradient fade from previous section */}
       <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-neutral-950 to-transparent z-30" />
 

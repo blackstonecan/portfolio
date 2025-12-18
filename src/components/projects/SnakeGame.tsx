@@ -49,17 +49,13 @@ export default function SnakeGame() {
 
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-20">
-          <div className="inline-block relative">
-            <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 relative">
-              <span className="bg-gradient-to-r from-green-400 via-cyan-400 to-green-400 bg-clip-text text-transparent animate-shine"
-                style={{ backgroundSize: '200% auto' }}>
-                Machine Learning Projects
-              </span>
-            </h2>
-            {/* Retro underline */}
-            <div className="h-1 bg-gradient-to-r from-transparent via-green-400 to-transparent" />
-          </div>
+        <div className="relative z-30 text-center pt-8 sm:pt-12 pb-6 sm:pb-8 mb-20 sm:mb-28">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 sm:mb-3 text-white">
+            Machine Learning
+          </h2>
+          <p className="text-sm sm:text-base md:text-lg text-neutral-400">
+            AI and machine learning projects showcasing deep learning and evolutionary algorithms
+          </p>
         </div>
 
         {/* Project Container */}

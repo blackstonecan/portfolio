@@ -3,6 +3,7 @@ import { ExternalLink, Github } from 'lucide-react';
 const Backend = () => {
   return (
     <div
+      id="backend"
       className="relative text-white py-20 sm:py-24"
       style={{
         backgroundImage: 'url(https://images.pexels.com/photos/46224/harley-davidson-motorcycles-chrome-shiny-46224.jpeg)',
