@@ -45,17 +45,17 @@ const Frontend = () => {
           <div className="relative z-30 flex flex-col justify-center items-center text-center px-6 py-32 sm:px-10 sm:py-36 md:p-12 lg:p-16 xl:p-20 h-full">
 
             {/* Title */}
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-white lg:text-neutral-200 tracking-[0.2em] sm:tracking-[0.25em] md:tracking-[0.3em] mb-4 uppercase transform group-hover:scale-105 transition-transform duration-500">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-light text-white lg:text-neutral-200 tracking-tight sm:tracking-wide md:tracking-[0.2em] lg:tracking-[0.3em] mb-4 sm:mb-6 uppercase transform group-hover:scale-105 transition-transform duration-500">
               AR MİMARLIK
             </h2>
 
             {/* Tagline */}
-            <p className="text-neutral-100 lg:text-neutral-400 text-sm sm:text-base md:text-lg lg:text-xl font-light tracking-[0.1em] sm:tracking-[0.12em] md:tracking-[0.15em] uppercase mb-6 sm:mb-8 transform group-hover:scale-105 transition-transform duration-500 delay-75">
+            <p className="text-neutral-100 lg:text-neutral-400 text-base sm:text-lg md:text-xl lg:text-xl font-light tracking-tight sm:tracking-wide md:tracking-[0.1em] lg:tracking-[0.15em] uppercase mb-6 sm:mb-8 transform group-hover:scale-105 transition-transform duration-500 delay-75">
               Architecture & Design Studio
             </p>
 
             {/* Description */}
-            <p className="text-neutral-100 lg:text-neutral-300/80 text-sm sm:text-base lg:text-lg leading-relaxed max-w-xl mb-8 sm:mb-10 font-light transform group-hover:scale-105 transition-transform duration-500 delay-100 px-4 sm:px-0">
+            <p className="text-neutral-100 lg:text-neutral-300/80 text-base sm:text-lg lg:text-lg leading-relaxed max-w-xl mb-8 sm:mb-10 font-light transform group-hover:scale-105 transition-transform duration-500 delay-100 px-4 sm:px-0">
               Professional architecture firm website showcasing residential and commercial projects with elegant presentation.
             </p>
 
@@ -64,7 +64,7 @@ const Frontend = () => {
               {['React', 'TypeScript', 'Supabase'].map((tech, idx) => (
                 <span
                   key={idx}
-                  className="px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm text-white lg:text-[#A0826D] border border-[#8B7355] lg:border-[#8B7355]/30 bg-[#8B7355]/40 lg:bg-transparent rounded backdrop-blur-md font-medium lg:font-light tracking-wide"
+                  className="px-3 sm:px-4 py-2 sm:py-2 text-sm sm:text-sm text-white lg:text-[#A0826D] border border-[#8B7355] lg:border-[#8B7355]/30 bg-[#8B7355]/40 lg:bg-transparent rounded backdrop-blur-md font-medium lg:font-light tracking-normal sm:tracking-wide"
                 >
                   {tech}
                 </span>
@@ -79,14 +79,14 @@ const Frontend = () => {
               className="inline-flex items-center gap-2 sm:gap-3 px-5 py-2.5 lg:px-0 lg:py-0 text-white lg:text-[#A0826D]/70 bg-[#8B7355]/50 lg:bg-transparent border border-[#8B7355] lg:border-transparent hover:bg-[#8B7355]/70 lg:hover:bg-transparent hover:text-white lg:hover:text-[#A0826D] hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer rounded-lg lg:rounded-none backdrop-blur-md lg:backdrop-blur-none"
               onClick={(e) => e.stopPropagation()}
             >
-              <span className="text-xs sm:text-sm font-medium lg:font-light tracking-[0.15em] sm:tracking-[0.2em] uppercase">Visit Website</span>
+              <span className="text-sm sm:text-base font-medium lg:font-light tracking-tight sm:tracking-wide lg:tracking-[0.15em] uppercase">Visit Website</span>
               <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 group-hover:translate-x-1" />
             </a>
 
             {/* Live indicator */}
-            <div className="absolute top-6 right-6 sm:top-8 sm:right-8 md:top-12 md:right-12 z-40 flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 md:px-4 py-1.5 sm:py-2 rounded-full bg-[#8B7355]/50 lg:bg-[#8B7355]/15 border border-[#8B7355] lg:border-[#8B7355]/30 backdrop-blur-md">
-              <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-white lg:bg-[#A0826D]/70 rounded-full animate-pulse" />
-              <span className="text-white lg:text-[#A0826D]/70 text-[10px] sm:text-xs font-medium lg:font-light tracking-wide">Live</span>
+            <div className="absolute top-6 right-6 sm:top-8 sm:right-8 md:top-12 md:right-12 z-40 flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3 md:px-4 py-2 sm:py-2 rounded-full bg-[#8B7355]/50 lg:bg-[#8B7355]/15 border border-[#8B7355] lg:border-[#8B7355]/30 backdrop-blur-md">
+              <div className="w-2 h-2 sm:w-2 sm:h-2 bg-white lg:bg-[#A0826D]/70 rounded-full animate-pulse" />
+              <span className="text-white lg:text-[#A0826D]/70 text-xs sm:text-xs font-medium lg:font-light tracking-wide">Live</span>
             </div>
           </div>
 
@@ -120,22 +120,22 @@ const Frontend = () => {
           <div className="relative z-30 flex flex-col justify-center items-center text-center px-6 py-32 sm:px-10 sm:py-36 md:p-12 lg:p-16 xl:p-20 h-full">
 
             {/* Title */}
-            <div className="mb-4 transform group-hover:scale-105 transition-transform duration-500">
-              <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white tracking-tight">
+            <div className="mb-4 sm:mb-6 transform group-hover:scale-105 transition-transform duration-500">
+              <span className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-bold text-white tracking-tight">
                 BlackR
               </span>
-              <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-red-600 tracking-tight ml-1 sm:ml-2">
+              <span className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-bold text-red-600 tracking-tight ml-1 sm:ml-2">
                 NEW MEDIA
               </span>
             </div>
 
             {/* Tagline */}
-            <p className="text-red-200 lg:text-red-400/80 text-sm sm:text-base md:text-lg lg:text-xl font-medium tracking-wide mb-6 sm:mb-8 transform group-hover:scale-105 transition-transform duration-500 delay-75">
+            <p className="text-red-200 lg:text-red-400/80 text-base sm:text-lg md:text-xl lg:text-xl font-medium tracking-tight sm:tracking-wide mb-6 sm:mb-8 transform group-hover:scale-105 transition-transform duration-500 delay-75">
               Digital Marketing Agency
             </p>
 
             {/* Description */}
-            <p className="text-neutral-100 lg:text-neutral-300/80 text-sm sm:text-base lg:text-lg leading-relaxed max-w-xl mb-8 sm:mb-10 transform group-hover:scale-105 transition-transform duration-500 delay-100 px-4 sm:px-0">
+            <p className="text-neutral-100 lg:text-neutral-300/80 text-base sm:text-lg lg:text-lg leading-relaxed max-w-xl mb-8 sm:mb-10 transform group-hover:scale-105 transition-transform duration-500 delay-100 px-4 sm:px-0">
               Modern digital marketing agency delivering content production, advertising, and brand strategy solutions.
             </p>
 
@@ -144,7 +144,7 @@ const Frontend = () => {
               {['React', 'TypeScript', 'Supabase'].map((tech, idx) => (
                 <span
                   key={idx}
-                  className="px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm text-neutral-100 lg:text-neutral-300 border border-red-800/50 lg:border-red-800/30 rounded backdrop-blur-sm font-medium"
+                  className="px-3 sm:px-4 py-2 sm:py-2 text-sm sm:text-sm text-neutral-100 lg:text-neutral-300 border border-red-800/50 lg:border-red-800/30 rounded backdrop-blur-sm font-medium tracking-normal sm:tracking-wide"
                 >
                   {tech}
                 </span>
@@ -159,14 +159,14 @@ const Frontend = () => {
               className="inline-flex items-center gap-2 sm:gap-3 px-4 sm:px-5 md:px-6 py-2.5 sm:py-3 bg-red-600 hover:bg-red-500 text-white rounded-lg transition-all duration-300 shadow-[0_0_20px_rgba(220,38,38,0.3)] hover:shadow-[0_0_30px_rgba(220,38,38,0.5)] transform hover:scale-110 cursor-pointer"
               onClick={(e) => e.stopPropagation()}
             >
-              <span className="text-xs sm:text-sm font-semibold tracking-wide">Visit Website</span>
+              <span className="text-sm sm:text-base font-semibold tracking-tight sm:tracking-wide">Visit Website</span>
               <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
             </a>
 
             {/* Live indicator */}
-            <div className="absolute top-6 right-6 sm:top-8 sm:right-8 md:top-12 md:right-12 z-40 flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 md:px-4 py-1.5 sm:py-2 rounded-full bg-red-900/60 lg:bg-red-950/30 border border-red-700 lg:border-red-800/30 backdrop-blur-md">
-              <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-red-300 lg:bg-red-500 rounded-full animate-pulse" />
-              <span className="text-red-200 lg:text-red-400 text-[10px] sm:text-xs font-medium">Live</span>
+            <div className="absolute top-6 right-6 sm:top-8 sm:right-8 md:top-12 md:right-12 z-40 flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3 md:px-4 py-2 sm:py-2 rounded-full bg-red-900/60 lg:bg-red-950/30 border border-red-700 lg:border-red-800/30 backdrop-blur-md">
+              <div className="w-2 h-2 sm:w-2 sm:h-2 bg-red-300 lg:bg-red-500 rounded-full animate-pulse" />
+              <span className="text-red-200 lg:text-red-400 text-xs sm:text-xs font-medium">Live</span>
             </div>
           </div>
         </div>
