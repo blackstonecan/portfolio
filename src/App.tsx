@@ -1,10 +1,12 @@
 import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
 import Entry from "./components/general/Entry";
 import Storytex from "./components/projects/Storytex";
 import Frontend from "./components/projects/Frontend";
 import Backend from "./components/projects/Backend";
 import OneByOne from "./components/projects/OneByOne";
 import SnakeGame from "./components/projects/SnakeGame";
+import FlappyBird from "./components/projects/FlappyBird";
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
       <Backend />
       <OneByOne />
       <SnakeGame />
+      <FlappyBird />
+      <Footer />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import { ExternalLink, Github } from 'lucide-react';
 import appIcon from '../../assets/one-by-one/app_icon.webp';
 import homePage from '../../assets/one-by-one/home_page.webp';
 import uploadPage from '../../assets/one-by-one/upload_page.webp';
+import progressVideo from '../../assets/one-by-one/progress_video.webm';
 
 const OneByOne = () => {
   return (
@@ -80,7 +81,7 @@ const OneByOne = () => {
           <div className="w-full md:w-1/3 max-w-xs">
             <div className="relative overflow-hidden rounded-3xl shadow-2xl shadow-orange-500/30 ring-2 ring-orange-500/30 hover:ring-orange-500/50 transition-all duration-300 hover:scale-105">
               <video
-                src="https://www.pexels.com/download/video/35272871/"
+                src={progressVideo}
                 className="w-full h-auto"
                 autoPlay
                 loop
