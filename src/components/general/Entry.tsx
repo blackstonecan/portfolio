@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { Github, Linkedin, Download, Mail, Code2 } from "lucide-react";
-import CV from "../../assets/CV.pdf";
 
 const BG_URL =
   "https://images.pexels.com/photos/3568360/pexels-photo-3568360.jpeg";
@@ -120,7 +119,7 @@ export default function Entry() {
           </a>
 
           <a
-            href={CV}
+            href="/CV.pdf"
             download
             className="group flex items-center gap-2.5 rounded-md border border-neutral-200 bg-neutral-100 px-5 py-2.5 text-sm font-medium text-neutral-900 transition-all duration-500 ease-out hover:bg-neutral-200 hover:scale-105 hover:shadow-lg hover:shadow-neutral-900/50"
           >
