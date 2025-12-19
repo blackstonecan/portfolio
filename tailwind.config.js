@@ -16,6 +16,9 @@ export default {
         'twinkle-slower': 'twinkle 4s ease-in-out infinite',
         'fade-in': 'fadeIn 1s ease-in-out',
         'shine': 'shine 3s linear infinite',
+        'gradient': 'gradient 8s linear infinite',
+        'float': 'float 6s ease-in-out infinite',
+        'float-slow': 'float 8s ease-in-out infinite',
       },
       keyframes: {
         twinkle: {
@@ -29,6 +32,14 @@ export default {
         shine: {
           '0%': { backgroundPosition: '200% center' },
           '100%': { backgroundPosition: '-200% center' },
+        },
+        gradient: {
+          '0%, 100%': { backgroundSize: '200% 200%', backgroundPosition: 'left center' },
+          '50%': { backgroundSize: '200% 200%', backgroundPosition: 'right center' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-10px)' },
         },
       },
     },

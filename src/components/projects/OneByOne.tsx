@@ -173,7 +173,6 @@ const OneByOne = () => {
               'Auto-bookmark progress',
               'Offline-first architecture',
               'Light & Dark themes',
-              'Cross-platform compatibility'
             ].map((feature, idx) => (
               <span
                 key={idx}

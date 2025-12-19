@@ -31,8 +31,8 @@ function App() {
 
 
       <Storytex />
-      <Frontend />
       <Backend />
+      <Frontend />
       <OneByOne />
       <SnakeGame />
       <FlappyBird />

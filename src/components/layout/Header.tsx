@@ -4,8 +4,8 @@ import icon from '../../assets/icon.png';
 const navItems = [
   { label: "Me", href: "#me" },
   { label: "Projects", href: "#projects" },
-  { label: "Frontend", href: "#frontend" },
   { label: "Backend", href: "#backend" },
+  { label: "Frontend", href: "#frontend" },
   { label: "Mobile", href: "#mobile" },
   { label: "Machine Learning", href: "#ml" },
 ];
