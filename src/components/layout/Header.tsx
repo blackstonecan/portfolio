@@ -22,8 +22,20 @@ export default function Header() {
     }
   }, [isMenuOpen]);
 
-  const handleNavClick = () => {
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
     setIsMenuOpen(false);
+
+    // Get the target element
+    const targetId = href.replace('#', '');
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
   };
 
   return (
@@ -32,7 +44,7 @@ export default function Header() {
       <header className="fixed top-0 left-0 right-0 z-50 border-b border-neutral-800 bg-neutral-950/80 backdrop-blur">
         <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
           {/* Logo on the left */}
-          <a href="#me" className="flex items-center relative z-50" onClick={handleNavClick}>
+          <a href="#me" className="flex items-center relative z-50" onClick={(e) => handleNavClick(e, "#me")}>
             <img src={icon} alt="Logo" className="h-10 w-10" />
           </a>
 
@@ -43,6 +55,7 @@ export default function Header() {
                 <a
                   href={item.href}
                   className="transition hover:text-white"
+                  onClick={(e) => handleNavClick(e, item.href)}
                 >
                   {item.label}
                 </a>
@@ -89,7 +102,7 @@ export default function Header() {
               <a
                 href={item.href}
                 className="transition hover:text-white hover:scale-105 duration-300"
-                onClick={handleNavClick}
+                onClick={(e) => handleNavClick(e, item.href)}
               >
                 {item.label}
               </a>
